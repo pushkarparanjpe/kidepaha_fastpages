@@ -1,0 +1,62 @@
+<h1 id="example-post-created-in-jupyter-notebook-but-rendered-using-nbdev_nb2md-tool">Example post created in Jupyter Notebook but rendered using nbdev_nb2md tool</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s">'a'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="s">'b'</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]})</span>
+</code></pre></div></div>
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="jupyter-notebook--blog-post-in-3-steps">Jupyter notebook –&gt; blog post in 3 steps</h3>
+
+<ol>
+  <li>Develop your notebook like you normally would</li>
+  <li>Render to <code class="highlighter-rouge">.md</code> format:<br />
+ <code class="highlighter-rouge">nbdev_nb2md &lt;notebook_name&gt;.ipynb</code></li>
+  <li>Copy <code class="highlighter-rouge">.md</code> file to <em>_posts</em> folder, commit and push!</li>
+</ol>
+
+<hr />
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li><a href="https://www.fast.ai/2020/01/16/fast_template/">Setting up GitHub Pages</a></li>
+  <li><a href="https://www.fast.ai/2020/01/20/nb2md/">Rendering a jupyter notebook to a markdown document and publishing</a></li>
+</ul>
